@@ -8,4 +8,15 @@
 ## Please fill in your project documentation in this README.md file 
 
 
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+Refer to [README](docs/source/index.rst) for this sample project documentation.
+
+List of Contributors
+=================================
+
+*In alphabetical order:*
+
+- Adem Golcuk
+- Berk Kisinbay
+- Burak Yakup Cakar
+- Emre Hakan Demirli
+- Muhammed Bahadir Turkoglu
