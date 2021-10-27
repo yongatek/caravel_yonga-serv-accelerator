@@ -9,7 +9,7 @@ Table of contents
 - [Setup](#setup)
 - [Running Simulation](#running-simulation)
 - [Hardening the User Project Macro using OpenLANE](#hardening-the-user-project-macro-using-openlane)
-- [Checklist for Open-MPW Two Submission](#checklist-for-open-mpw-two-submission)
+- [Checklist for Open-MPW Three Submission](#checklist-for-open-mpw-three-submission)
 - [List of Contributors](#list-of-contributors)
 
 Overview
@@ -38,7 +38,7 @@ Hardening the User Project Macro using OpenLANE
 
 TBA
 
-Checklist for Open-MPW Two Submission
+Checklist for Open-MPW Three Submission
 =================================
 
 TBA
