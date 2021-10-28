@@ -87,7 +87,7 @@ module Matrix_TOP #(
     );
 
     reg m_rst_t;
-    always@(negedge i_wb_clk) begin
+    always@(posedge i_wb_clk) begin
         if(m_rst == 0)
             m_rst_t <= 1;
         else
@@ -96,7 +96,7 @@ module Matrix_TOP #(
 
     Matrix_Core ma_core(
         .clk(i_wb_clk),
-        .m_rst(m_rst_t),
+        .m_rst((!m_rst_t)&(!m_rst)),
         .run(run),
         .a(first_matrix[fm_adr]),
         .b(second_matrix[sm_adr]),
@@ -105,13 +105,16 @@ module Matrix_TOP #(
 
     reg [7:0] t_adr_p;
     reg [7:0] t_adr_pp;
+    reg [7:0] t_adr_ppp;
 
-    always@(negedge i_wb_clk) t_adr_p <= t_adr;
-    always@(negedge i_wb_clk) t_adr_pp <= t_adr_p;
+    always@(posedge i_wb_clk) t_adr_p <= t_adr;
+    always@(posedge i_wb_clk) t_adr_pp <= t_adr_p;
+    always@(posedge i_wb_clk) t_adr_ppp <= t_adr_pp;
 
-    always@(posedge m_rst_t) begin
-        third_matrix[t_adr_pp] <= acc;
+    always@(posedge i_wb_clk) begin
+        if(m_rst == 1'b0)
+            third_matrix[t_adr_ppp] <= acc;
     end
 
-
 endmodule
+
