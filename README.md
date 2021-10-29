@@ -47,7 +47,7 @@ Timer is a 32-bit register. Current time can be read but can not be written. Any
 
 ### ACCELERATOR
 
-Matrices are memory mapped like 2D C arrays. The first matrix and the second matrix are write only. The third matrix, _control register_ and register _finished_ are read only.
+Matrices are memory mapped like 2D C arrays. The first matrix, _control register_ and the second matrix are write only. The third matrix, and register _finished_ are read only.
 
 |           | Base Address| Size (bits)|
 | ---       | ---         | ---        |
