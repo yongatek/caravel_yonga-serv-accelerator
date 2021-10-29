@@ -10,6 +10,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// Design subservient_wrapped is mainly part of the following project: https://github.com/klasnordmark/subservient_wrapped
+
 `default_nettype none
 
 module subservient_wrapped (
