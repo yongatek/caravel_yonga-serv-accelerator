@@ -58,8 +58,8 @@ set ::env(VERILOG_FILES) "\
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_PERIOD) "50"
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 1500 2000"
-
+set ::env(DIE_AREA) "0 0 1500 1800"
+set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 set ::env(DIODE_INSERTION_STRATEGY) 3
 set ::env(DESIGN_IS_CORE) 0
 set ::env(GLB_RT_MAXLAYER) 5
