@@ -25,8 +25,6 @@
     `include "gl/sky130_ef_sc_hd__fakediode_2.v"
 `else
     `include "user_project_wrapper.v"
-    `include "vlog_tb_utils.v"    
-    `include "uart_decoder.v"
     `include "Matrix_FSM.v"
     `include "Matrix_Core.v"
     `include "Matrix_TOP.v"
