@@ -40,7 +40,7 @@ SIM?=RTL
 
 .SUFFIXES:
 
-PATTERN = la_test2
+PATTERN = subservient_alone
 
 all:  ${PATTERN:=.vcd}
 

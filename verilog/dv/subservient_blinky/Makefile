@@ -40,7 +40,7 @@ SIM?=RTL
 
 .SUFFIXES:
 
-PATTERN = mprj_stimulus
+PATTERN = subservient_blinky
 
 all:  ${PATTERN:=.vcd}
 

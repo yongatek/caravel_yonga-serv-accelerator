@@ -40,7 +40,7 @@ SIM?=RTL
 
 .SUFFIXES:
 
-PATTERN = wb_port
+PATTERN = subservient_test
 
 all:  ${PATTERN:=.vcd}
 
