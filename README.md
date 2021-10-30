@@ -110,12 +110,46 @@ make install
 Running Simulation
 ========
 
-TBA
+### Subservient Blinky
 
+* This test is meant to verify that the SERV CPU functions correctly by toggling the first GPIO pin.
+
+To run RTL simulation, 
+
+```bash
+cd $UPRJ_ROOT
+make verify-subservient_blinky
+```
+### Subservient Test
+
+* This test is meant to verify that the matrix multiplication accelerator functions correctly.   
+(This test requires at least 30GB of free space)   
+
+To run RTL simulation, 
+
+```bash
+cd $UPRJ_ROOT
+make verify-subservient_test
+```
+### Subservient Alone
+
+* This is a quick test to verify the design without Caravel.
+
+To run RTL simulation, 
+
+```bash
+cd $UPRJ_ROOT
+make verify-subservient_alone
+```
 Hardening the User Project Macro using OpenLANE
 ========
 
-TBA
+```bash
+# Run openlane to harden subservient_wrapped
+make subservient_wrapped
+# Run openlane to harden user_project_wrapper
+make user_project_wrapper
+```
 
 Checklist for Open-MPW Three Submission
 =================================
